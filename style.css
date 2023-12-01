@@ -17,6 +17,7 @@ html {
     justify-content: center;
     opacity: 0;
     visibility: hidden;
+    transition: all .5s;
 
 }
 
@@ -55,6 +56,7 @@ html {
     position: absolute;
     top: 1.7rem;
     right: 3rem;
+    animation: searchIconAnim2 .5s forwards;
 }
 
 .change.search-icon {
@@ -84,5 +86,15 @@ html {
     100% {
         top: 1.7rem;
         right: calc(50% + 16rem);
+    }
+}
+
+@keyframes searchIconAnim2 {
+    0% {
+        right: calc(50% + 16rem);
+    }
+
+    100% {
+        right: 3rem;
     }
 }
