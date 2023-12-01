@@ -19,6 +19,11 @@ html {
     visibility: hidden;
 }
 
+.change.search-input-wrapper {
+    opacity: 1;
+    visibility: visible;
+}
+
 .search-input {
     width: 30rem;
     display: flex;
@@ -48,6 +53,10 @@ html {
     position: absolute;
     top: 1.7rem;
     right: 3rem;
+}
+
+.change.search-icon {
+    right: calc(50% + 16rem);
 }
 
 .search-icon i {
